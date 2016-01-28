@@ -13,3 +13,6 @@
 10. Users and computers have a limited time to move
 11. Users and computers have an aggregate time limit, like in chess
 12. Users can play against each other in the same browser
+
+####Logic####
+Info: Array of colors in order, first is bottom cell.

@@ -1,21 +1,87 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+#connect-four {
+  width: 740px;
+}
+
 .board-column {
-  border: 2px solid black;
   height: 600px;
-  width: 98px;
+  width: 100px;
   display: inline-block;
-  box-sizing: border-box;
 }
 
 #board {
-  border: 1px solid red;
-  width: 720px;
+  clear: both;
+  border: 2px solid black;
+  width: 740px;
   height: 600px;
+  background-color: #FFD700;
+  padding: 0px;
 }
 
 .cell {
-  background-color: red;
-  width: 80px;
-  height: 80px;
+  background-color: white;
+  width: 90px;
+  height: 90px;
   display: block;
+  border-radius: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: 2px solid black;
+}
 
+#column-0 .cell:nth-child(6) {
+    background: red;
+}
+
+#column-0 .cell:nth-child(5) {
+  background-color: orange;
+}
+
+#column-1 .cell:nth-child(6) {
+    background: red;
+}
+
+#column-2 .cell:nth-child(6) {
+  background-color: blue;
+}
+
+#column-3 .cell:nth-child(6) {
+    background: purple;
+}
+
+#column-4 .cell:nth-child(6) {
+  background-color: green;
+}
+
+#column-5 .cell:nth-child(6) {
+  background-color: black;
+}
+
+#column-6 .cell:nth-child(6) {
+  background-color: brown;
+}
+
+h1 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  display: inline-block;
+  float: left;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+  float: right;
+}
+div {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#player2 {
+  display: none;
 }
