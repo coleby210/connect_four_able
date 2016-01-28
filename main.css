@@ -36,34 +36,6 @@ body {
     background: red;
 }
 
-#column-0 .cell:nth-child(5) {
-  background-color: orange;
-}
-
-#column-1 .cell:nth-child(6) {
-    background: red;
-}
-
-#column-2 .cell:nth-child(6) {
-  background-color: blue;
-}
-
-#column-3 .cell:nth-child(6) {
-    background: purple;
-}
-
-#column-4 .cell:nth-child(6) {
-  background-color: green;
-}
-
-#column-5 .cell:nth-child(6) {
-  background-color: black;
-}
-
-#column-6 .cell:nth-child(6) {
-  background-color: brown;
-}
-
 h1 {
   margin-bottom: 0px;
   margin-top: 0px;
