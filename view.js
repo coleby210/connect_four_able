@@ -9,4 +9,18 @@ $(document).ready(function(){
     $("#player2").toggle();
     $("#player1").toggle();
   })
-})
+  $("#board").children().on("click", function(event){
+    if($("#player1").is(":visible")){
+      if( $(event.target).hasClass("cell")) $(event.target).css("background-color", "red");
+      else {
+        $(event.target).children().css("background-color", "red");
+      };
+    }
+    else{
+      if( $(event.target).hasClass("cell")) $(event.target).css("background-color", "black");
+      else {
+        $(event.target).children().css("background-color", "black");
+      };
+    };
+  });
+});
