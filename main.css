@@ -32,7 +32,7 @@ body {
   border: 2px solid black;
 }
 
-#column-0 .cell:nth-child(6) {
+#0 .cell:nth-child(6) {
     background: red;
 }
 
