@@ -12,8 +12,7 @@ Game.prototype.drop = function(num, color){
     var column = this.board[num];
     column.push(color);
   };
-  this.lastPosition = [num, this.board[num].length-1];
-  this.checkWin();
+  this.lastPosition = [parseInt(num), this.board[num].length-1];
 }
 
 Game.prototype.checkWin = function(){
@@ -107,9 +106,6 @@ if (northEast + southWest >= 3){
   //return false because no winner
   return false;
 };
-
-var game = new Game;
-
 
 game.drop(1, 'black');
 game.drop(2, 'red');
