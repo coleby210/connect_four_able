@@ -9,7 +9,7 @@ $(document).ready(function(){
   $("#board").on("click", '.cell', function(event){
     // debugger;
       var player_1_color = "red"
-      var player_2_color = "black"
+      var player_2_color = "blue"
 
     if($("#player1").is(":visible")){
       var column_id = $(event.target).parent().attr('id');
@@ -30,7 +30,7 @@ $(document).ready(function(){
     } else {
       var column_id = $(event.target).parent().attr('id');
       newGame.drop(column_id, player_2_color);
-      console.log(newGame.board);
+      // console.log(newGame.board);
       var index = 1;
       newGame.board[column_id].forEach(function(cell){
         if (cell === player_1_color) {
