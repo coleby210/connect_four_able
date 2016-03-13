@@ -107,20 +107,20 @@ if (northEast + southWest >= 3){
   return false;
 };
 
-game.drop(1, 'black');
-game.drop(2, 'red');
-game.drop(2, 'black');
-game.drop(3, 'red');
-game.drop(3, 'red');
-game.drop(3, 'black');
-game.drop(4, 'red');
-game.drop(4, 'red');
-game.drop(4, 'red');
-console.log(game.board);
-console.log(game.checkWin())
-game.drop(4, 'black');
-console.log(game.board);
-console.log(game.checkWin())
+// game.drop(1, 'black');
+// game.drop(2, 'red');
+// game.drop(2, 'black');
+// game.drop(3, 'red');
+// game.drop(3, 'red');
+// game.drop(3, 'black');
+// game.drop(4, 'red');
+// game.drop(4, 'red');
+// game.drop(4, 'red');
+// console.log(game.board);
+// console.log(game.checkWin())
+// game.drop(4, 'black');
+// console.log(game.board);
+// console.log(game.checkWin())
 
 // game.drop(1, 'black');
 // game.drop(2, 'black');
