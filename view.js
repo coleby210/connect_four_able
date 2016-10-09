@@ -8,8 +8,8 @@ $(document).ready(function(){
 
   $("#board").on("click", '.cell', function(event){
     // debugger;
-      var player_1_color = "red"
-      var player_2_color = "blue"
+      var player_1_color = "white"
+      var player_2_color = "black"
 
     if($("#player1").is(":visible")){
       var column_id = $(event.target).parent().attr('id');
