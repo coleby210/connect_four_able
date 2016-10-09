@@ -8,34 +8,36 @@ $(document).ready(function(){
 
   $("#board").on("click", '.cell', function(event){
     // debugger;
+      var player_1_color = "white"
+      var player_2_color = "black"
 
     if($("#player1").is(":visible")){
       var column_id = $(event.target).parent().attr('id');
-      newGame.drop(column_id, 'red');
-      // newGame.drop(column_id, 'black');
-      console.log(newGame.board);
+      newGame.drop(column_id, player_1_color);
+      // newGame.drop(column_id, player_2_color);
+      // console.log(newGame.board);
       // $(event.target).html('');
       var index = 1;
       newGame.board[column_id].forEach(function(cell){
-        if (cell === 'red') {
-          $('#'+ column_id + ' .cell:nth-child(' + (7 - index) +')').css('background-color', 'red');
+        if (cell === player_1_color) {
+          $('#'+ column_id + ' .cell:nth-child(' + (7 - index) +')').css('background-color', player_1_color);
           index++;
         } else {
-          $('#'+ column_id + ' .cell:nth-child(' + (7 - index) +')').css('background-color', 'black');
+          $('#'+ column_id + ' .cell:nth-child(' + (7 - index) +')').css('background-color', player_2_color);
           index++;
         }
       });
     } else {
       var column_id = $(event.target).parent().attr('id');
-      newGame.drop(column_id, 'black');
-      console.log(newGame.board);
+      newGame.drop(column_id, player_2_color);
+      // console.log(newGame.board);
       var index = 1;
       newGame.board[column_id].forEach(function(cell){
-        if (cell === 'red') {
-          $('#'+ column_id + ' .cell:nth-child(' + (7 - index) +')').css('background-color', 'red');
+        if (cell === player_1_color) {
+          $('#'+ column_id + ' .cell:nth-child(' + (7 - index) +')').css('background-color', player_1_color);
           index++;
         } else {
-          $('#'+ column_id + ' .cell:nth-child(' + (7 - index) +')').css('background-color', 'black');
+          $('#'+ column_id + ' .cell:nth-child(' + (7 - index) +')').css('background-color', player_2_color);
           index++;
         }
       });

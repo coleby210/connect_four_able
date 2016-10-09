@@ -1,5 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: gray;
 }
 
 #connect-four {
@@ -17,12 +18,13 @@ body {
   border: 2px solid black;
   width: 740px;
   height: 600px;
-  background-color: #FFD700;
+  background-image: url("img/wood.jpg");
+  background-repeat: repeat;
   padding: 0px;
 }
 
 .cell {
-  background-color: white;
+  background-color: gray;
   width: 90px;
   height: 90px;
   display: block;
@@ -32,9 +34,9 @@ body {
   border: 2px solid black;
 }
 
-#0 .cell:nth-child(6) {
+/*.cell:nth-child(6) {
     background: red;
-}
+}*/
 
 h1 {
   margin-bottom: 0px;
